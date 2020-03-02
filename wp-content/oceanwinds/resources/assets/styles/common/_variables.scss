@@ -1,0 +1,22 @@
+// Media Queries
+$breakpoint-small: "screen and (max-width: 690px)" !default;
+$breakpoint-not-small: "screen and (min-width: 691px)" !default;
+$breakpoint-medium: "screen and (min-width: 691px) and (max-width: 1024px)" !default;
+$breakpoint-not-large: "screen and (max-width: 1024px)" !default;
+$breakpoint-large: "screen and (min-width: 1025px)" !default;
+$breakpoint-desk: "screen and (min-width: 1025px) and (max-width: 1180px)" !default;
+$breakpoint-not-extra-large: "screen and (max-width: 1180px)" !default;
+$breakpoint-extra-large: "screen and (min-width: 1181px)" !default;
+
+// Colors
+$white: #fff;
+$grey-light: #f3f3f2;
+$grey: #d8d8d8;
+$grey-dark: #9b9b9b;
+$black: #000;
+
+$yellow: #fff500;
+$blue: #072b31;
+
+// Fonts
+$main-font: "TT Hoves", Helvetica, Arial, sans-serif;

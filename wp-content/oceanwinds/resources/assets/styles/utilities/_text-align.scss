@@ -1,0 +1,23 @@
+// .tl  { text-align: left; }
+// .tr  { text-align: right; }
+.tc {
+  text-align: center;
+}
+
+// @media #{$breakpoint-small} {
+// }
+
+// @media #{$breakpoint-not-small} {
+// }
+
+// @media #{$breakpoint-medium} {
+// }
+
+@media #{$breakpoint-not-large} {
+  .tc-nl {
+    text-align: center;
+  }
+}
+
+// @media #{$breakpoint-large} {
+// }

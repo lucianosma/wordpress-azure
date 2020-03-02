@@ -1,0 +1,181 @@
+.video-section {
+  height: 100vh;
+  max-height: 680px;
+
+  &__copy {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50px;
+      right: 0;
+      z-index: 2;
+      width: 200px;
+      height: 107px;
+      background: center / cover no-repeat url("../images/wind-bg.png");
+    }
+  }
+
+  &__social {
+    right: 16px;
+
+    p {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.page-section {
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 400px;
+    height: 215px;
+    background: no-repeat url("../images/wind-bg.png");
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    width: 50vw;
+    height: 100%;
+    background-color: $yellow;
+    box-shadow: -30px 0 30px -14px $grey-dark;
+  }
+
+  &__image {
+    padding-top: 56%;
+  }
+
+  &--company {
+    &:before {
+      top: 50px;
+      left: 62%;
+    }
+  }
+
+  &--careers {
+    &:before {
+      top: 0;
+      left: 54%;
+    }
+  }
+}
+
+.news-section {
+  &__cover {
+    padding-top: 70%;
+    background-color: $grey;
+  }
+
+  &__tile {
+    box-shadow: 0 0 50px $grey-dark;
+  }
+}
+
+.map-section {
+  &__map {
+    height: 420px;
+  }
+}
+
+@media #{$breakpoint-extra-large} {
+  .video-section {
+    &__social {
+      right: 36px;
+    }
+  }
+}
+
+@media #{$breakpoint-large} {
+  .video-section {
+    &__copy {
+      &:before {
+        width: 400px;
+        height: 215px;
+        top: -20%;
+        left: 15%;
+      }
+    }
+  }
+
+  .page-section {
+    &__image {
+      width: 65%;
+    }
+
+    &__text-container {
+      width: 35%;
+    }
+  }
+
+  .map-section {
+    &__map {
+      height: 850px;
+    }
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .page-section {
+    &__image {
+      width: 55%;
+    }
+
+    &__text-container {
+      width: 40%;
+    }
+  }
+
+  .map-section {
+    &__map {
+      height: 640px;
+    }
+  }
+}
+
+@media #{$breakpoint-not-small} {
+  .page-section {
+    &__image {
+      padding-top: 42.5%;
+    }
+  }
+
+  .news-section {
+    &__btn {
+      margin-top: -20px;
+    }
+  }
+}
+
+@media #{$breakpoint-small} {
+  .page-section {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 30%;
+      left: 0;
+      width: 100vw;
+      height: 70%;
+      box-shadow: 0px -40px 30px 0px $grey-dark;
+    }
+
+    &--company {
+      &:before {
+        top: 50%;
+        left: 0;
+      }
+    }
+
+    &--careers {
+      &:before {
+        top: 55%;
+        left: 30%;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// Colors
+.bg-white {
+  background-color: $white;
+}
+.bg-grey-light {
+  background-color: $grey-light;
+}
+.bg-grey {
+  background-color: $grey;
+}
+.bg-yellow {
+  background-color: $yellow;
+}
+.bg-blue {
+  background-color: $blue;
+}
+
+// Sizes
+.bg-cover {
+  background-size: cover;
+}
+
+// Positions
+.bg-center {
+  background-position: center;
+}
+
+@media #{$breakpoint-not-large} {
+  .bg-grey-nl {
+    background-color: $grey;
+  }
+}

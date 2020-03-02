@@ -1,0 +1,103 @@
+.f1 {
+  font-size: 68px;
+}
+
+.f2 {
+  font-size: 48px;
+}
+
+.f3 {
+  font-size: 32px;
+}
+
+.f4 {
+  font-size: 24px;
+}
+
+.f5 {
+  font-size: 21px;
+}
+
+.f6 {
+  font-size: 18px;
+}
+
+.f7 {
+  font-size: 14px;
+}
+
+.f8 {
+  font-size: 12px;
+}
+
+@media #{$breakpoint-not-large} {
+  .f8-nl {
+    font-size: 12px;
+  }
+}
+
+@media #{$breakpoint-not-small} {
+  .f3-ns {
+    font-size: 32px;
+  }
+  .f4-ns {
+    font-size: 24px;
+  }
+  .f7-ns {
+    font-size: 14px;
+  }
+}
+
+@media #{$breakpoint-large} {
+  .f1-l {
+    font-size: 68px;
+  }
+  .f2-l {
+    font-size: 48px;
+  }
+  .f5-l {
+    font-size: 21px;
+  }
+}
+
+@media #{$breakpoint-extra-large} {
+  .f1-xl {
+    font-size: 68px;
+  }
+  .f2-xl {
+    font-size: 48px;
+  }
+  .f3-xl {
+    font-size: 32px;
+  }
+  .f4-xl {
+    font-size: 24px;
+  }
+  .f5-xl {
+    font-size: 21px;
+  }
+  .f6-xl {
+    font-size: 18px;
+  }
+}
+
+@media #{$breakpoint-desk} {
+  .f2-d {
+    font-size: 48px;
+  }
+  .f5-d {
+    font-size: 21px;
+  }
+  .f6-d {
+    font-size: 18px;
+  }
+}
+
+@media #{$breakpoint-medium} {
+  .f3-m {
+    font-size: 32px;
+  }
+  .f7-m {
+    font-size: 14px;
+  }
+}

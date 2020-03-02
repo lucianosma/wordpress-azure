@@ -1,0 +1,60 @@
+.top-0    { top:    0; }
+.right-0 {
+  right: 0;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.left-0 { left: 0; }
+
+.left-p-100 {
+  left: 100%;
+}
+
+// .absolute--fill {
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+// }
+
+// .center-elem-h {
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
+
+.center-elem-v {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// .center-elem {
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+// @media #{$breakpoint-small} {
+// }
+
+// @media #{$breakpoint-not-small} {
+// }
+
+// @media #{$breakpoint-medium} {
+// }
+
+@media #{$breakpoint-not-large} {
+  .top-0-nl {
+    top: 0;
+  }
+
+  .left-0-nl {
+    left: 0;
+  }
+}
+
+@media #{$breakpoint-large} {
+  .bottom-0-l {
+    bottom: 0;
+  }
+}

@@ -1,0 +1,12 @@
+.map {
+  height: 0;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: opacity 0.6s;
+
+  &.active {
+    height: auto;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}

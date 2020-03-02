@@ -1,0 +1,37 @@
+// .static { position: static; }
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+
+// @media #{$breakpoint-small} {
+// }
+
+// @media #{$breakpoint-not-small} {
+// }
+
+// @media #{$breakpoint-medium} {
+// }
+
+@media #{$breakpoint-not-large} {
+  .absolute-nl {
+    position: absolute;
+  }
+  .fixed-nl {
+    position: fixed;
+  }
+}
+
+@media #{$breakpoint-large} {
+  .relative-l {
+    position: relative;
+  }
+  .absolute-l {
+    position: absolute;
+  }
+}

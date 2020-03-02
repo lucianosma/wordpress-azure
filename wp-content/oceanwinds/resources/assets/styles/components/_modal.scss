@@ -1,0 +1,25 @@
+.modal {
+  height: 0;
+  opacity: 0;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+
+  &__container {
+    width: 100%;
+    padding-top: 56%;
+
+    @media #{$breakpoint-large} {
+      width: 90%;
+      padding-top: 50.6%;
+    }
+  }
+
+  &__close {
+    top: 2rem;
+    right: 2rem;
+  }
+
+  &.active {
+    height: 100vh;
+    opacity: 1;
+  }
+}

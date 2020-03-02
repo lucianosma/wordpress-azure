@@ -1,0 +1,13 @@
+.lang-menu {
+  li {
+    position: relative;
+  }
+
+  .sub-menu {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    display: none;
+    transform: translateX(-50%);
+  }
+}

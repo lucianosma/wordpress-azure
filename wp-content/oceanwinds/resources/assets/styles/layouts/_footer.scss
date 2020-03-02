@@ -1,0 +1,23 @@
+.footer-nav-menu {
+  li {
+    &:hover {
+      font-weight: 500;
+    }
+  }
+}
+
+@media #{$breakpoint-not-large} {
+  .footer-nav-menu {
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media #{$breakpoint-large} {
+  .footer-nav-menu {
+    li {
+      margin-right: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.h-scale {
+  transform: scale(1);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

@@ -1,0 +1,87 @@
+.logo-section {
+  height: 165px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    z-index: -1;
+    width: 100vw;
+    height: 100%;
+    background-color: $yellow;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50px;
+    z-index: -1;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(155, 155, 155, 0.4) 0%, rgba(250, 250, 250, 0) 30%);
+  }
+
+  &__wind-icon {
+    height: 25px;
+  }
+}
+
+.nav-menu {
+  &__link {
+    color: transparent;
+    font-weight: 500;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: 0;
+      width: 30px;
+      border-bottom: 2px solid $blue;
+      transform: translateX(-30px);
+      transition-duration: 0.3s;
+    }
+
+    &::after {
+      content: attr(data-title);
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-weight: 300;
+      color: $blue;
+      transition-duration: 0.3s;
+    }
+
+    &:hover,
+    &.active {
+      &::after {
+        font-weight: 500;
+      }
+
+      &::before {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+@media #{$breakpoint-not-large} {
+  .logo-section {
+    height: 80px;
+  }
+
+  .nav-container {
+    top: 80px;
+    transform: translateX(100vw);
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+
+  .nav-menu {
+    border-bottom: 1px solid $blue;
+  }
+}
